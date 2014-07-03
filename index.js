@@ -24,10 +24,15 @@ EmberCLIBootstrap.prototype.treeFor = function treeFor(name) {
 };
 
 EmberCLIBootstrap.prototype.included = function included(app) {
-  var rootPath = 'vendor/bootstrap/dist/css/';
+  var rootPath = 'vendor/bootstrap/dist/';
 
-  app.import(rootPath + 'bootstrap-theme.css');
-  app.import(rootPath + 'bootstrap.css');
+  app.import(rootPath + 'js/bootstrap.js');
+  app.import(rootPath + 'css/bootstrap-theme.css');
+  app.import(rootPath + 'css/bootstrap.css');
+  app.import(rootPath + 'fonts/glyphicons-halflings-regular.woff');
+  app.import(rootPath + 'fonts/glyphicons-halflings-regular.eot');
+  app.import(rootPath + 'fonts/glyphicons-halflings-regular.svg');
+  app.import(rootPath + 'fonts/glyphicons-halflings-regular.ttf');
 };
 
 module.exports = EmberCLIBootstrap;
